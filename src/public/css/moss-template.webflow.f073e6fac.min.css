@@ -442,7 +442,7 @@ label{
     margin-bottom:10px;
     padding:8px 12px;
     font-size:14px;
-    line-height:1.42857;
+    line-height:1.12857;
     display:block
 }
 .w-input:-moz-placeholder,.w-select:-moz-placeholder{
@@ -1855,11 +1855,7 @@ blockquote{
     border-radius:1em;
     padding-top:62.5%;
     position:relative;
-    overflow:hidden;
-
-    display: flex;
-      justify-content: center;
-      align-items: center;
+    overflow:hidden
 }
 .image-background-parallax{
     width:100%;
@@ -1873,6 +1869,7 @@ blockquote{
 }
 .work-sticky-list{
     flex-direction:column;
+    padding:10vw 5vw 50vh;
     display:flex;
     position:relative;
     overflow:hidden
@@ -1964,6 +1961,7 @@ blockquote{
 }
 .work-sticky-item{
     width:100%;
+    max-width:45vw;
     perspective:100vw;
     perspective-origin:50%;
     flex-direction:column;
@@ -2065,13 +2063,16 @@ blockquote{
     overflow:hidden
 }
 .work-thumb-title{
-    z-index: 5;
-    font-size: 120px;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: absolute;
-    color: #Fff;
+    z-index:5;
+    font-variation-settings:"wght" 450,"opsz" 32;
+    letter-spacing:.02em;
+    text-transform:uppercase;
+    line-height: 100%;
+    font-size: 125px;
+    font-weight:bold;
+    position:absolute;
     text-align: center;
+    color: #fff;
 }
 .button-events {
     display:flex;
@@ -2340,10 +2341,7 @@ blockquote{
 }
 .contact-grid{
     width:100%;
-    grid-column-gap:2em;
-    grid-row-gap:2em;
-    grid-template-rows:auto;
-    grid-template-columns:1.2fr 1fr
+
 }
 ._3x-grid{
     grid-column-gap:2em;
@@ -2593,7 +2591,7 @@ blockquote{
     font-size:1em
 }
 .text-field{
-    height:5vh;
+    height:3vh;
     color: #fff;
     background-color:transparent;
     border:1px #000;
